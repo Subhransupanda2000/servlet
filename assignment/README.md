@@ -1,7 +1,6 @@
 # What are the most common HTTP headers?
 
 * HTTP headers play a crucial role in server and client behavior throughout the request and response cycle. Request headers are sent by the client to the server and contain information and instructions related to the requested resource, while response headers are sent by the server to the client and provide metadata, instructions, and additional information about the response itself.
- ![Screenshot (554)](https://github.com/Subhransupanda2000/servlet/assets/123824203/7b45a867-f526-4ecc-a63b-bbaa99d88483)
 # Some of the most commonly used request headers are:
 
 * Accept
@@ -18,6 +17,8 @@ The Content-Type header identifies the media type of the content in the request 
 
 * Cookie
 The client can use the Cookie header to send previously stored cookies back to the server. The server then uses these cookies to associate the request with a specific user or session. This header plays an important role in delivering personalized experiences, as it enables the server to remember a user’s login state or language preference.
+ ![Screenshot (554)](https://github.com/Subhransupanda2000/servlet/assets/123824203/7b45a867-f526-4ecc-a63b-bbaa99d88483)
+
 # Basic Authentication
 Basic authentication is a simple authentication mechanism used in HTTP protocol. It allows a client to provide credentials (username and password) when making an HTTP request to a server. The server then validates these credentials before processing the request. Here's how it works:
 
