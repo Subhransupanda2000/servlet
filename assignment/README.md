@@ -102,6 +102,39 @@ Safe: Yes (Should not have any side effects on the server).
  ![Screenshot (552)](https://github.com/Subhransupanda2000/servlet/assets/123824203/59bb9c2d-a6d8-4689-9815-53d2653b0800)
  ![Screenshot (553)](https://github.com/Subhransupanda2000/servlet/assets/123824203/8a148961-90fa-4d96-81a9-bf2b8ee4b87a)
 ![Screenshot (554)](https://github.com/Subhransupanda2000/servlet/assets/123824203/7b45a867-f526-4ecc-a63b-bbaa99d88483)
+```
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+import org.springframework.web.filter.CorsFilter;
+
+@Configuration
+public class CorsConfig {
+
+    @Bean
+    public CorsFilter corsFilter() {
+        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        CorsConfiguration config = new CorsConfiguration();
+
+        // Allow all origins, headers, and methods for demonstration purposes.
+        config.addAllowedOrigin("*");
+        config.addAllowedHeader("*");
+        config.addAllowedMethod("*");
+
+        source.registerCorsConfiguration("/**", config);
+        return new CorsFilter(source);
+    }
+}
+
+```
+CORS is a security feature implemented by web browsers to restrict webpages from making requests to a different domain than the one that served the original webpage. It is a security mechanism implemented in web browsers to prevent a web page from making requests to a different domain than the one that served the web page. CORS is enforced by web browsers, not by the server.
+
+When a web application hosted on one domain (origin) makes a request for resources to a different domain, the browser may block the request due to the Same-Origin Policy. CORS allows servers to specify which origins are permitted to access their resources and which HTTP methods (e.g., GET, POST) are allowed.
+
+Why CORS is Used:
+
+CORS is used to enable secure cross-origin requests and data transfers between browsers and servers. It allows servers to specify who can access their resources and under what conditions. This is crucial for ensuring that sensitive data is not exposed to unauthorized domains.
 
 
 
