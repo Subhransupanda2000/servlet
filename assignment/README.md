@@ -40,6 +40,18 @@ Using the Token: The client includes the bearer token in the HTTP Authorization 
 Validation: Upon receiving a request with a bearer token, the resource server validates the token to ensure its authenticity and integrity. This typically involves verifying the token's signature (if it's a JWT) or consulting with the authorization server to confirm the token's validity.
 
 Access Control: Once the bearer token is successfully validated, the resource server grants access to the requested resource based on the permissions associated with the token.
+# Authentication:
+
+Authentication is the process of verifying the identity of a user, system, or entity attempting to access a resource or service.
+It ensures that the user is who they claim to be before granting access to protected resources.
+Authentication mechanisms typically involve presenting credentials, such as usernames, passwords, tokens, or biometric data, and validating them against a trusted source, such as a user database or identity provider.
+Successful authentication establishes trust in the identity of the user, allowing them to proceed with accessing authorized resources.
+# Authorization:
+
+Authorization is the process of determining what actions or resources a user is allowed to access or perform after they have been authenticated.
+It involves enforcing access control policies based on the authenticated user's identity, roles, permissions, or other attributes.
+Authorization mechanisms define rules and policies that govern who can access specific resources, what operations they can perform, and under what conditions.
+Authorization typically occurs after authentication and relies on information about the user's identity and associated permissions.
 # What is jwt?
 * JSON Web Token (JWT) authentication is a stateless method of securely transmitting information between parties as a JavaScript Object Notation (JSON) object. It is often used to authenticate and authorize users in web applications and APIs.
 # Idempotent
