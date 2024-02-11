@@ -45,6 +45,17 @@ The Content-Length header, which specifies the size of the response body in byte
 * ![Screenshot (552)](https://github.com/Subhransupanda2000/servlet/assets/123824203/59bb9c2d-a6d8-4689-9815-53d2653b0800)
 * ![Screenshot (553)](https://github.com/Subhransupanda2000/servlet/assets/123824203/8a148961-90fa-4d96-81a9-bf2b8ee4b87a)
 * ![Screenshot (554)](https://github.com/Subhransupanda2000/servlet/assets/123824203/7b45a867-f526-4ecc-a63b-bbaa99d88483)
+  # Status code:
+  200 OK: Request successful, server fulfilled the client's request.
+201 Created: New resource created successfully.
+202 Accepted: Request accepted for processing, but not completed yet.
+500 Internal Server Error: Server encountered an unexpected condition.
+502 Bad Gateway: Server received an invalid response from an upstream server.
+503 Service Unavailable: Server currently unable to handle the request.
+404 Not Found: Requested resource not found on the server.
+406 Not Acceptable: Server cannot generate a response meeting client's criteria.
+415 Unsupported Media Type: Server refuses to accept request due to unsupported media type.
+302 Found: Requested resource temporarily moved to a different URI.
 
 
 
