@@ -43,5 +43,9 @@ The Content-Length header, which specifies the size of the response body in byte
 # What is jwt?
 * JSON Web Token (JWT) authentication is a stateless method of securely transmitting information between parties as a JavaScript Object Notation (JSON) object. It is often used to authenticate and authorize users in web applications and APIs.
 * ![Screenshot (552)](https://github.com/Subhransupanda2000/servlet/assets/123824203/59bb9c2d-a6d8-4689-9815-53d2653b0800)
+* ![Screenshot (553)](https://github.com/Subhransupanda2000/servlet/assets/123824203/8a148961-90fa-4d96-81a9-bf2b8ee4b87a)
+* ![Screenshot (554)](https://github.com/Subhransupanda2000/servlet/assets/123824203/7b45a867-f526-4ecc-a63b-bbaa99d88483)
+
+
 
 
