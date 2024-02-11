@@ -42,6 +42,39 @@ Validation: Upon receiving a request with a bearer token, the resource server va
 Access Control: Once the bearer token is successfully validated, the resource server grants access to the requested resource based on the permissions associated with the token.
 # What is jwt?
 * JSON Web Token (JWT) authentication is a stateless method of securely transmitting information between parties as a JavaScript Object Notation (JSON) object. It is often used to authenticate and authorize users in web applications and APIs.
+# Idempotent
+In the context of HTTP, idempotent methods are HTTP methods where making the same request multiple times has the same effect as making it once. This property simplifies error handling and recovery, particularly in scenarios where requests may be retried due to network issues or other failures. Here are the idempotent methods in HTTP:
+
+GET:
+
+Purpose: Retrieve data from the specified resource.
+Idempotent: Yes (Multiple identical requests have the same effect as a single request).
+Safe: Yes (Should not have any side effects on the server).
+HEAD:
+
+Purpose: Retrieve headers of a resource without the response body.
+Idempotent: Yes (Multiple identical requests have the same effect as a single request).
+Safe: Yes (Should not have any side effects on the server).
+PUT:
+
+Purpose: Update a resource or create a new resource if it does not exist.
+Idempotent: Yes (Multiple identical requests have the same effect as a single request).
+Safe: No (May have side effects on the server).
+DELETE:
+
+Purpose: Request the removal of a resource identified by the URI.
+Idempotent: Yes (Multiple identical requests have the same effect as a single request).
+Safe: No (May have side effects on the server).
+OPTIONS:
+
+Purpose: Describe the communication options for the target resource.
+Idempotent: Yes (Multiple identical requests have the same effect as a single request).
+Safe: Yes (Should not have any side effects on the server).
+TRACE:
+
+Purpose: Echo the received request for diagnostic purposes.
+Idempotent: Yes (Multiple identical requests have the same effect as a single request).
+Safe: Yes (Should not have any side effects on the server).
 # Status code:
 * 200 OK: Request successful, server fulfilled the client's request.
 * 201 Created: New resource created successfully.
