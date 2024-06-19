@@ -19,11 +19,11 @@
 
 # 6) What is difference between Get and Post method?
 * Get	Post
-* 1) Limited amount of data can be sent because data is sent in header.	Large amount of data can be sent because data is sent in body.
-* 2) Not Secured because data is exposed in URL bar.	Secured because data is not exposed in URL bar.
-* 3) Can be bookmarked	Cannot be bookmarked
-* 4) Idempotent	Non-Idempotent
-* 5) It is more efficient and used than Post	It is less efficient and used
+* 1) Limited amount of data can be sent because data is sent in header.post	Large amount of data can be sent because data is sent in body.
+* 2) Not Secured because data is exposed in URL bar.post	Secured because data is not exposed in URL bar.
+* 3) Can be bookmarked	.post Cannot be bookmarked
+* 4) get is Idempotent.post is	Non-Idempotent
+* 5) It is more efficient and used than Post	.post is less efficient and used
 # 7) What is difference between PrintWriter and ServletOutputStream?
 * PrintWriter is a character-stream class where as ServletOutputStream is a byte-stream class. The PrintWriter class can be used to write only character-based information whereas ServletOutputStream class can be 
 * used to write primitive values as well as character-based information.
